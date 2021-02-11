@@ -1,0 +1,14 @@
+- name: manage server for exercise 4
+  hosts: exercise4
+  become: yes
+  roles:
+    - role: geerlingguy.nginx
+      when: ansible_facts['distribution'] == 'Ubuntu'
+    - role: geerlingguy.apache
+      when: ansible_facts['distribution'] == 'RedHat'
+
+  tasks:
+    - name: add file index.html
+      file:
+        path: /var/www/index.html
+        state: touch

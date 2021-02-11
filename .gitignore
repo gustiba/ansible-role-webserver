@@ -1,0 +1,5 @@
+vm-ansible/.terraform
+jcde-key.pem
+ansible-var.yaml
+playbook-loop.yaml
+playbook.yaml
