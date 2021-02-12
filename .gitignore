@@ -1,4 +1,5 @@
 vm-ansible/.terraform
+vm-ansible/.terraform.lock.hcl
 jcde-key.pem
 ansible-var.yaml
 playbook-loop.yaml
